@@ -1,10 +1,12 @@
 import './App.css';
+import PagePrincpale from './pages/PagePrincipale';
+import CarteProvider from './context/carte.context';
 
 function App() {
   return (
-    <>
-      <h1>Jeu de mémoire</h1>
-    </>
+    <CarteProvider>
+      <PagePrincpale />
+    </CarteProvider>
   );
 }
 
